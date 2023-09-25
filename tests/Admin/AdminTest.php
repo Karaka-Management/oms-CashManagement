@@ -21,7 +21,7 @@ final class AdminTest extends \PHPUnit\Framework\TestCase
 {
     protected const NAME = 'CashManagement';
 
-    protected const URI_LOAD = 'http://127.0.0.1/en/backend/cash';
+    protected const URI_LOAD = 'http://127.0.0.1/en/backend/accounting/cash';
 
     use \tests\Modules\ModuleTestTrait;
 }
