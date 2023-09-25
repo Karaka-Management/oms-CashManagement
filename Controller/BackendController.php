@@ -14,11 +14,6 @@ declare(strict_types=1);
 
 namespace Modules\CashManagement\Controller;
 
-use phpOMS\Contract\RenderableInterface;
-use phpOMS\Message\RequestAbstract;
-use phpOMS\Message\ResponseAbstract;
-use phpOMS\Views\View;
-
 /**
  * Calendar controller class.
  *
