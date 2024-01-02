@@ -12,5 +12,32 @@
  */
 declare(strict_types=1);
 
+use Modules\CashManagement\Controller\BackendController;
+use Modules\CashManagement\Models\PermissionCategory;
+use phpOMS\Account\PermissionType;
+use phpOMS\Router\RouteVerb;
+
 return [
+    '^.*/accounting/cash/list.*$' => [
+        [
+            'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::CASH,
+            ],
+        ],
+    ],
+    '^.*/accounting/cash/register.*$' => [
+        [
+            'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::CASH,
+            ],
+        ],
+    ],
 ];
