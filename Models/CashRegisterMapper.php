@@ -14,6 +14,8 @@ declare(strict_types=1);
 
 namespace Modules\CashManagement\Models;
 
+use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
+
 /**
  * Cash register.
  *
@@ -22,6 +24,6 @@ namespace Modules\CashManagement\Models;
  * @link    https://jingga.app
  * @since   1.0.0
  */
-class CashRegisterMapper
+class CashRegisterMapper extends DataMapperFactory
 {
 }
