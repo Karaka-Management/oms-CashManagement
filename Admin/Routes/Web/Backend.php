@@ -18,7 +18,7 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^.*/accounting/cash/list(\?.*$|$)' => [
+    '^/accounting/cash/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
             'verb'       => RouteVerb::GET,
@@ -29,7 +29,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/cash/register(\?.*$|$)' => [
+    '^/accounting/cash/register(\?.*$|$)' => [
         [
             'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
             'verb'       => RouteVerb::GET,
