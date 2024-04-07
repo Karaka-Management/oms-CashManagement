@@ -22,6 +22,7 @@ return [
         [
             'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
             'verb'       => RouteVerb::GET,
+            'active' => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
@@ -33,6 +34,7 @@ return [
         [
             'dest'       => '\Modules\CashManagement\Controller\BackendController:viewCashList',
             'verb'       => RouteVerb::GET,
+            'active' => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
