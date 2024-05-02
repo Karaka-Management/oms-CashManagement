@@ -22,6 +22,12 @@ namespace Modules\CashManagement\Controller;
  * @link    https://jingga.app
  * @since   1.0.0
  * @codeCoverageIgnore
+ *
+ * @todo Create cash analysis structure
+ *      https://github.com/Karaka-Management/oms-Accounting/issues/5
+ *
+ * @todo Create comparison feature for Balance, Asset, P&L, Cash
+ *      https://github.com/Karaka-Management/oms-Accounting/issues/3
  */
 final class BackendController extends Controller
 {
